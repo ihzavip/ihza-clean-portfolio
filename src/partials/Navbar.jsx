@@ -114,6 +114,18 @@ const Navbar = () => {
             </HashLink>
           </li>
 
+          <li className="cursor-pointer">
+            <HashLink
+              className="link link-underline link-underline-black"
+              smooth
+              to="/#skill"
+            >
+              <span className="link link-underline link-underline-black">
+                skills
+              </span>
+            </HashLink>
+          </li>
+
           <li className="cursor-pointer ">
             <HashLink
               className="link link-underline link-underline-black"
@@ -222,6 +234,22 @@ const Navbar = () => {
                   </span>
                 </HashLink>
               </li>
+
+              <li className="cursor-pointer">
+                <HashLink
+                  className="link link-underline link-underline-black uppercase"
+                  smooth
+                  to="/#skill"
+                  onClick={() => {
+                    setReversed(!reversed);
+                  }}
+                >
+                  <span className="link link-underline link-underline-black">
+                    skills
+                  </span>
+                </HashLink>
+              </li>
+
               <li>
                 <HashLink
                   className="link link-underline link-underline-black uppercase"
@@ -266,7 +294,7 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <div className=" mt-48 opacity-100 flex gap-8 justify-center">
+            <div className=" mt-28 opacity-100 flex gap-8 justify-center">
               <a href="https://github.com/ihzavip" target="_blank">
                 <UilGithub size="40" className="social-media-animation" />
               </a>

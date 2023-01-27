@@ -80,7 +80,7 @@ export default function Expertise() {
         className="pt-12 sm:pl-24  flex flex-col md:flex-row md:justify-start min-h-ful max-w-screen-2xl items-center "
       >
         <div className="sm:mr-12">
-          <div className="sm:w-96 pl-6 md:pl-0">
+          <div className="sm:w-96 px-6 md:px-0">
             <h2 className="text-white saol text-4xl md:text-5xl ">Expertise</h2>
             <p className="mt-2 mb-6 ">
               I am dedicated to finding the most advanced digital solutions for

@@ -11,10 +11,11 @@ import { EffectCards } from "swiper";
 export default function App() {
   return (
     <>
-      <section className="relative h-full pt-12 px-6 sm:px-24 sm:py-24 ">
-        <h2 className="saol text-white text-center text-4xl mb-10">
-          Technologies
-        </h2>
+      <section
+        id="skill"
+        className="relative h-full pt-12 px-6 sm:px-24 sm:py-24 "
+      >
+        <h2 className="saol text-white text-center text-4xl mb-10">Skills</h2>
         <Swiper
           effect={"cards"}
           grabCursor={true}
@@ -36,7 +37,7 @@ export default function App() {
             </ul>
           </SwiperSlide>
           <SwiperSlide className="skills flex flex-col py-6 items-center bg-[#0c0c0c] rounded border border-white/50">
-            <h4 className="text-xl ">Library</h4>
+            <h4 className="text-xl ">Framework & Lib</h4>
             <ul className="flex flex-col items-center mt-5">
               <li>React</li>
               <li>Next</li>
