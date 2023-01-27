@@ -61,7 +61,7 @@ const Navbar = () => {
           ease: "easeInOut",
         })
         .from(
-          ".main-menu li span",
+          ".main-menu li ",
           {
             opacity: 0,
             stagger: 0.3,
@@ -108,9 +108,7 @@ const Navbar = () => {
               smooth
               to="/#experience-section"
             >
-              <span className="link link-underline link-underline-black">
-                Experience
-              </span>
+              Experience
             </HashLink>
           </li>
           <li className="cursor-pointer ">
@@ -119,9 +117,7 @@ const Navbar = () => {
               smooth
               to="/#project-section"
             >
-              <span className="link link-underline link-underline-black">
-                project
-              </span>
+              project
             </HashLink>
           </li>
 
@@ -131,9 +127,7 @@ const Navbar = () => {
               smooth
               to="/#skill"
             >
-              <span className="link link-underline link-underline-black">
-                skills
-              </span>
+              skills
             </HashLink>
           </li>
 
@@ -143,9 +137,7 @@ const Navbar = () => {
               smooth
               to="/#expertise-section"
             >
-              <span className="link link-underline link-underline-black">
-                expertise
-              </span>
+              expertise
             </HashLink>
           </li>
 
@@ -155,9 +147,7 @@ const Navbar = () => {
               smooth
               to="/#faq-section"
             >
-              <span className="link link-underline link-underline-black">
-                faq
-              </span>
+              faq
             </HashLink>
           </li>
           <li className="cursor-pointer ">
@@ -166,9 +156,7 @@ const Navbar = () => {
               smooth
               to="/#footer-section"
             >
-              <span className="link link-underline link-underline-black">
-                contact
-              </span>
+              contact
             </HashLink>
           </li>
         </ul>
@@ -216,7 +204,7 @@ const Navbar = () => {
       <section className="fullpage-menu bg-gradient absolute block -translate-x-[800%] inset-0 w-screen h-screen z-10 ">
         <div className="flex items-start text-center h-full pt-24">
           <nav className="relative z-10">
-            <ul className="main-menu saol text-white/90 text-3xl w-screen flex flex-col gap-8">
+            <ul className="main-menu saol uppercase text-white/90 text-3xl w-screen flex flex-col gap-8">
               <li>
                 <HashLink
                   className="link link-underline link-underline-black"
@@ -226,9 +214,7 @@ const Navbar = () => {
                     setReversed(!reversed);
                   }}
                 >
-                  <span className="link link-underline link-underline-black uppercase">
-                    Experience
-                  </span>
+                  Experience
                 </HashLink>
               </li>
               <li>
@@ -240,9 +226,7 @@ const Navbar = () => {
                     setReversed(!reversed);
                   }}
                 >
-                  <span className="link link-underline link-underline-black">
-                    Project
-                  </span>
+                  Project
                 </HashLink>
               </li>
 
@@ -255,9 +239,7 @@ const Navbar = () => {
                     setReversed(!reversed);
                   }}
                 >
-                  <span className="link link-underline link-underline-black">
-                    skills
-                  </span>
+                  skills
                 </HashLink>
               </li>
 
@@ -270,9 +252,7 @@ const Navbar = () => {
                     setReversed(!reversed);
                   }}
                 >
-                  <span className="link link-underline link-underline-black">
-                    expertise
-                  </span>
+                  expertise
                 </HashLink>
               </li>
               <li>
@@ -284,9 +264,7 @@ const Navbar = () => {
                     setReversed(!reversed);
                   }}
                 >
-                  <span className="link link-underline link-underline-black">
-                    faq
-                  </span>
+                  faq
                 </HashLink>
               </li>
               <li>
@@ -298,9 +276,7 @@ const Navbar = () => {
                     setReversed(!reversed);
                   }}
                 >
-                  <span className="link link-underline link-underline-black">
-                    contact
-                  </span>
+                  contact
                 </HashLink>
               </li>
             </ul>
