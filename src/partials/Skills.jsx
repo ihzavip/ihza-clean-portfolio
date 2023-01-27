@@ -11,7 +11,7 @@ import { EffectCards } from "swiper";
 export default function App() {
   return (
     <>
-      <section className="relative h-full p-6">
+      <section className="relative h-full pt-12 px-6 sm:px-24 sm:py-24 ">
         <h2 className="saol text-white text-center text-4xl mb-10">
           Technologies
         </h2>

@@ -21,7 +21,7 @@ const Navbar = () => {
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
-    if (currentScrollPos > prevScrollPos) {
+    if (currentScrollPos > prevScrollPos && reversed) {
       setVisible(false);
     } else {
       setVisible(true);
@@ -52,7 +52,6 @@ const Navbar = () => {
         .from(
           ".main-menu li span",
           {
-            // duration: ,
             opacity: 0,
             stagger: 0.3,
             ease: "Expo.easeOut",
@@ -64,6 +63,7 @@ const Navbar = () => {
           {
             duration: 1.2,
             opacity: 0,
+            yPercent: 200,
             stagger: 0.5,
             ease: "Expo.easeOut",
           },
@@ -76,7 +76,7 @@ const Navbar = () => {
   useEffect(() => {
     // tl.current.reversed(reversed);
     if (reversed) {
-      tl.current.timeScale(10).reversed(reversed);
+      tl.current.timeScale(15).reversed(reversed);
     } else {
       tl.current.timeScale(1).reversed(reversed);
     }
