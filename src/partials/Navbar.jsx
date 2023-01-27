@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, useLayoutEffect, useState } from "react";
 import { gsap } from "gsap";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 import {
@@ -21,7 +20,7 @@ const Navbar = () => {
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
-    if (currentScrollPos > prevScrollPos && reversed) {
+    if (currentScrollPos > prevScrollPos) {
       setVisible(false);
     } else {
       setVisible(true);
@@ -29,6 +28,18 @@ const Navbar = () => {
 
     setPrevScrollPos(currentScrollPos);
   };
+
+  // const handleScroll = () => {
+  //   const currentScrollPos = window.scrollY;
+
+  //   if (currentScrollPos > prevScrollPos && reversed) {
+  //     setVisible(false);
+  //   } else {
+  //     setVisible(true);
+  //   }
+
+  //   setPrevScrollPos(currentScrollPos);
+  // };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -76,7 +87,7 @@ const Navbar = () => {
   useEffect(() => {
     // tl.current.reversed(reversed);
     if (reversed) {
-      tl.current.timeScale(15).reversed(reversed);
+      tl.current.timeScale(10).reversed(reversed);
     } else {
       tl.current.timeScale(1).reversed(reversed);
     }
