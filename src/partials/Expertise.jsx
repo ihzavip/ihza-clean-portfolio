@@ -81,7 +81,7 @@ export default function Expertise() {
       >
         <div className="sm:mr-12">
           <div className="sm:w-96 pl-6 md:pl-0">
-            <h2 className="text-white saol text-5xl ">Expertise</h2>
+            <h2 className="text-white saol text-4xl md:text-5xl ">Expertise</h2>
             <p className="mt-2 mb-6 ">
               I am dedicated to finding the most advanced digital solutions for
               brands that want to be progressive and make a meaningful impact.

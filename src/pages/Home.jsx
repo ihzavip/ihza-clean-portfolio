@@ -6,6 +6,7 @@ import ProjectTab from "../partials/ProjectTab";
 import Expertise from "../partials/Expertise";
 import FaqSection from "../partials/FaqSection";
 import Footer from "../partials/Footer";
+import Skills from "../partials/Skills";
 const Home = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const Home = () => {
       <Experience />
       {/* <Project/> */}
       <ProjectTab />
+      <Skills />
       <Expertise />
       <FaqSection />
       <Footer />

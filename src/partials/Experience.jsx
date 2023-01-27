@@ -23,7 +23,7 @@ const Experience = () => {
     >
       <div className="timeline-container" id="timeline-1">
         <div className="text-center w-full relative mb-28">
-          <h3 className="text-white saol px-6 text-5xl md:text-5xl">
+          <h3 className="text-white saol px-6 text-4xl md:text-5xl">
             Experience
           </h3>
         </div>

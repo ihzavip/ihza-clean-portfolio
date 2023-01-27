@@ -70,7 +70,9 @@ export default function Tabs() {
 
   return (
     <section id="project-section" className="py-12 px-6 sm:py-24 sm:px-24 ">
-      <h2 className="text-white saol text-5xl text-center ">Projects</h2>
+      <h2 className="text-white saol text-4xl md:text-5xl text-center ">
+        Projects
+      </h2>
       <div>
         <div className="relative">
           <div className="flex justify-center items-center gap-12 mt-10 border-b ">
@@ -88,7 +90,7 @@ export default function Tabs() {
             })}
           </div>
           <span
-            className="absolute bottom-0 block h-[1px] bg-[#fff8aa] transition-all duration-300"
+            className="absolute bottom-0 block h-[2px] bg-red-900 transition-all duration-300"
             style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }}
           />
         </div>
