@@ -1,0 +1,28 @@
+/* .first-item { */
+/*   position: relative; */
+/* } */
+
+/* .first-item { */
+/*   height: 100%; */
+/*   width: 100%; */
+/*   background: url("https://source.unsplash.com/random/?city,night"); */
+/*   background-size: cover; */
+/*   background-repeat: no-repeat; */
+/*   background-position: center; */
+/*   /* backdrop-filter: blur(100%); */ */
+/*   filter: blur(100%); */
+/*   /* opacity: 0.4; */ */
+/*   /* content: ""; */ */
+/*   /* inset: 0; */ */
+/*   /* position: absolute; */ */
+/*   /* transform: scaleY(0); */ */
+/*   /* transform-origin: right; */ */
+/*   transition: opacity 0.5s ease-in-out; */
+/*   z-index: -100; */
+/* } */
+
+/* .first-item:hover { */
+/*   /* transform: scaleY(1); */ */
+/*   /* transform-origin: left; */ */
+/*   opacity: 100; */
+/* } */

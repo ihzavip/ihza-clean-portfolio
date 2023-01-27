@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap");
+@font-face {
+  font-family: saol;
+  src: url(/SaolDisplay-Regular.ttf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.saol {
+  font-family: saol;
+}
+
+.bg-gradient {
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
+}
+
+body {
+  /* overflow: hidden; */
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  color: #adadad;
+  background-color: #0c0c0c;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 3px;
+  transform-style: preserve-3d;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+/* Optional: show position indicator in red */
+/* ::-webkit-scrollbar-thumb { */
+/*   background: #ff0000; */
+/* } */
+
+/* ini untuk apa */
+/* check later */
+/* nav ul li a { */
+/*   letter-spacing: 5px; */
+/*   text-transform: uppercase; */
+/*   cursor: pointer; */
+/*   font-weight: 300; */
+/*   font-size: 1.125rem; */
+/* } */
+
+.link-underline {
+  border-bottom-width: 0;
+  background-image: linear-gradient(transparent, transparent),
+    linear-gradient(#fff, #fff);
+  background-size: 0 0px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.link-underline:hover {
+  background-size: 100% 1px;
+  background-position: 0 50%;
+}
