@@ -20,7 +20,7 @@ export default function App() {
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="skill-swiper  text-white w-[60vw] h-[50vh]"
+          className="skill-swiper text-white max-w-[60vw] h-[50vh]"
         >
           <SwiperSlide className="skills flex flex-col py-6 items-center bg-[#0c0c0c] rounded border border-white/50">
             <h4 className="text-xl ">Basic Stack</h4>

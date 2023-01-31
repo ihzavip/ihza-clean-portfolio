@@ -150,15 +150,6 @@ const Navbar = () => {
               faq
             </HashLink>
           </li>
-          <li className="cursor-pointer ">
-            <HashLink
-              className="link link-underline link-underline-black"
-              smooth
-              to="/#footer-section"
-            >
-              contact
-            </HashLink>
-          </li>
         </ul>
         <div>
           <button
@@ -267,18 +258,7 @@ const Navbar = () => {
                   faq
                 </HashLink>
               </li>
-              <li>
-                <HashLink
-                  className="link link-underline link-underline-black uppercase"
-                  smooth
-                  to="/#footer-section"
-                  onClick={() => {
-                    setReversed(!reversed);
-                  }}
-                >
-                  contact
-                </HashLink>
-              </li>
+              <li></li>
             </ul>
 
             <div className=" mt-28 opacity-100 flex gap-8 justify-center">

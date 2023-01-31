@@ -1,12 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 // import ScrollToTopButton from "../partials/partial-components/ScrollToTopButton";
 const ExpertisePage = () => {
   return (
     <>
       <section id="top" className="min-h-screen relative px-6 md:px-80 ">
-        <Link to={"/"}>
+        <HashLink to={"/#expertise-section"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
@@ -19,7 +18,7 @@ const ExpertisePage = () => {
               clipRule="evenodd"
             />
           </svg>
-        </Link>
+        </HashLink>
         <div className="pt-32 max-w">
           <h2 className="saol text-3xl text-white uppercase">
             skillset & tools

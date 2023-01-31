@@ -1,5 +1,6 @@
 import "swiper/css/bundle";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -86,7 +87,7 @@ export default function Expertise() {
               I am dedicated to finding the most advanced digital solutions for
               brands that want to be progressive and make a meaningful impact.
             </p>
-            <Link to={"/expertisepage"}>
+            <HashLink to={"/expertisepage/#top"}>
               <button
                 type="button"
                 className="border-[#626262] border-[1px] h-10 w-36 px-4 py-2 rounded tracking-[3px] bg-transparent font-semibold hover:border-[#fff8aa] hover:bg-[#fff8aa14] text-white hover:text-[#fff8aa] uppercase"
@@ -107,7 +108,7 @@ export default function Expertise() {
                   </svg>
                 </div>
               </button>
-            </Link>
+            </HashLink>
           </div>
         </div>
         <Swiper
