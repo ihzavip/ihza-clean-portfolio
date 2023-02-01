@@ -19,7 +19,11 @@ export const DownloadButton = ({ btnName }) => {
       <button
         onClick={onButtonClick}
         type="button"
-        className="border-[#626262] border-[1px] h-10 w-36 px-4 py-2 rounded tracking-[3px] bg-transparent font-semibold hover:border-[#fff8aa] hover:bg-[#fff8aa14] text-white hover:text-[#fff8aa]"
+        className="h-10 w-36 px-4 py-2 text-white bg-transparent tracking-[3px] font-semibold 
+        border-[#626262] border-[1px] rounded 
+        xl:h-16 xl:w-52 xl:text-2xl
+        hover:border-[#fff8aa] hover:bg-[#fff8aa14] hover:text-[#fff8aa]
+        "
       >
         <div className="flex gap-1 justify-center">
           <p>{btnName}</p>

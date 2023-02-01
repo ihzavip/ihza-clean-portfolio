@@ -34,17 +34,19 @@ const HeroMain = () => {
     <>
       <main
         id="hero-section"
-        className="pt-12 px-6 md:px-24 md:pt-32 md:pb-32 gap-10 md:gap-28 
+        className="pt-12 px-6 md:px-24 md:pt-32 md:pb-24 gap-10 md:gap-28 
         h-full w-full
-        flex flex-col justify-center items-center md:flex-row md:items-start md:justify-center"
+        flex flex-col justify-center items-center md:flex-row md:items-start md:justify-between"
       >
-        <div className="flex flex-col md:w-1/2">
-          <p className="hero-animation md:mb-2">Hello, I'm </p>
-          <h1 className="hero-animation mb-3 md:mb-6  saol text-4xl text-white md:text-5xl">
-            IHZA HASIBUAN
-          </h1>
+        <div className="flex flex-col gap-6 max-w-2xl xl:gap-12">
+          <div>
+            <p className="hero-animation text-lg xl:text-xl">Hello, I'm</p>
+            <h1 className="hero-animation saol text-4xl text-white md:text-5xl xl:text-6xl ">
+              IHZA HASIBUAN
+            </h1>
+          </div>
 
-          <p className="hero-animation text-base md:text-xl mb-8">
+          <p className="hero-animation text-base md:text-base lg: xl:text-3xl ">
             I am a web developer with a background in sales, and I proficient in
             creating beautifully designed and highly functional websites that
             help businesses achieve their goals. Thank you for visiting!
@@ -55,11 +57,12 @@ const HeroMain = () => {
             <Link to={"/story"}>
               <button
                 type="button"
-                className="border-[#626262] border-[1px] h-10 w-36 px-4 py-2 rounded tracking-[3px] bg-transparent font-semibold hover:border-[#fff8aa] hover:bg-[#fff8aa14] text-white hover:text-[#fff8aa] uppercase"
+                className="h-10 w-36 px-4 py-2 text-white font-semibold tracking-[3px]
+                border-[#626262] border-[1px]  rounded  bg-transparent  hover:border-[#fff8aa] hover:bg-[#fff8aa14]  hover:text-[#fff8aa] uppercase xl:h-16 xl:w-52 xl:text-2xl
+"
               >
                 <div className="flex justify-center">
                   <p>story</p>
-                  <sup></sup>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"

@@ -12,6 +12,11 @@ module.exports = {
       animation: {
         fadeIn: "fadeIn 0.4s ease-in-out forwards",
       },
+      screens: {
+        md: "800px",
+        lg: "1200px",
+        xl: "1400px",
+      },
     },
   },
   plugins: [],

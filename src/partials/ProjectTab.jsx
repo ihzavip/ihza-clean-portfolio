@@ -69,7 +69,7 @@ export default function Tabs() {
   }, [activeTabIndex]);
 
   return (
-    <section id="project-section" className="py-12 px-6 sm:py-24 sm:px-24 ">
+    <section id="project-section" className="py-12 px-6 sm:px-24 ">
       <h2 className="text-white saol text-4xl md:text-5xl text-center ">
         Projects
       </h2>
@@ -90,7 +90,7 @@ export default function Tabs() {
             })}
           </div>
           <span
-            className="absolute bottom-0 block h-[2px] bg-red-900 transition-all duration-300"
+            className="absolute bottom-0 block h-[3px] bg-yellow-400 transition-all duration-300"
             style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }}
           />
         </div>

@@ -78,7 +78,7 @@ export default function Expertise() {
     <>
       <section
         id="expertise-section"
-        className="pt-12 sm:pl-24  flex flex-col md:flex-row md:justify-start min-h-ful max-w-screen-2xl items-center "
+        className="pt-24 sm:pl-24 flex flex-col md:flex-row md:justify-start min-h-ful max-w-screen-2xl items-center "
       >
         <div className="sm:mr-12">
           <div className="sm:w-96 px-6 md:px-0">

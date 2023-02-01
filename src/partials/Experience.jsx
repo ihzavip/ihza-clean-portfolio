@@ -19,7 +19,7 @@ const Experience = () => {
   return (
     <section
       id="experience-section"
-      className="pt-12 sm:pt-24 sm:px-24 flex flex-col items-center"
+      className="pt-12 sm:px-24 flex flex-col items-center"
     >
       <div className="timeline-container" id="timeline-1">
         <div className="text-center w-full relative mb-28">

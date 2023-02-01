@@ -100,7 +100,7 @@ const Navbar = () => {
         `}
     >
       {/* for desktop */}
-      <nav className="hidden md:flex justify-between items-center border-b-[1px] px-16 py-4 ">
+      <nav className="hidden xl:text-2xl md:flex justify-between items-center border-b-[1px] px-16 py-4 ">
         <ul className="flex gap-10 font-semibold uppercase tracking-[6px] text-white">
           <li className="cursor-pointer ">
             <HashLink
@@ -154,10 +154,14 @@ const Navbar = () => {
         <div>
           <button
             type="button"
-            className="animateButton border-[#626262] border-[1px] rounded-[8rem] px-4 py-2 text-xs tracking-[3px] bg-transparent font-semibold hover:border-[#fff8aa] hover:bg-[#fff8aa14] hover:text-[#fff8aa] "
+            className="animateButton
+            px-4 py-2 text-xs tracking-[3px] bg-transparent font-semibold 
+            border-[#626262] border-[1px] rounded-[8rem]
+            hover:border-[#fff8aa] hover:bg-[#fff8aa14] hover:text-[#fff8aa]
+            md:text-xl"
           >
             HIRE ME
-          </button>{" "}
+          </button>
         </div>
       </nav>
 
