@@ -2,13 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Story = () => {
   return (
-    <section className="relative px-12 md:px-80 ">
+    <section className="relative px-12 lg:px-52">
       <Link to={"/"}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 20 20"
           fill="currentColor"
-          className="w-10 h-10 absolute left-6 md:left-16 top-6"
+          className="absolute top-6 left-6 w-10 h-10 md:left-16"
         >
           <path
             fillRule="evenodd"
@@ -17,9 +17,9 @@ const Story = () => {
           />
         </svg>
       </Link>
-      <div className="pt-32 ">
-        <h2 className="saol text-3xl text-white">ABOUT ME</h2>
-        <div className="text-lg py-6 break-word">
+      <div className="pt-32">
+        <h2 className="text-3xl text-white saol">ABOUT ME</h2>
+        <div className="py-6 text-lg break-word">
           <p className="mt-6">
             Hey there, my name is Muhammad Ihza Mahendra and I'm a web developer
             with a background of sales. I love creating websites that are not

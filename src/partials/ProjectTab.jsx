@@ -69,19 +69,19 @@ export default function Tabs() {
   }, [activeTabIndex]);
 
   return (
-    <section id="project-section" className="py-12 px-6 sm:px-24 ">
-      <h2 className="text-white saol text-4xl md:text-5xl text-center ">
+    <section id="project-section" className="px-6 pt-12 lg:px-24 lg:pt-24">
+      <h2 className="text-4xl text-center text-white md:text-5xl font-saol">
         Projects
       </h2>
       <div>
         <div className="relative">
-          <div className="flex justify-center items-center gap-12 mt-10 border-b ">
+          <div className="flex gap-12 justify-center items-center mt-10 border-b">
             {tabsData.map((tab, idx) => {
               return (
                 <button
                   key={idx}
                   ref={(el) => (tabsRef.current[idx] = el)}
-                  className="py-3 px-2 saol text-xl"
+                  className="py-3 px-2 text-xl font-saol"
                   onClick={() => setActiveTabIndex(idx)}
                 >
                   {tab.label}
@@ -90,24 +90,24 @@ export default function Tabs() {
             })}
           </div>
           <span
-            className="absolute bottom-0 block h-[3px] bg-yellow-400 transition-all duration-300"
+            className="block absolute bottom-0 transition-all duration-300 bg-yellow-400/95 h-[3px]"
             style={{ left: tabUnderlineLeft, width: tabUnderlineWidth }}
           />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-6 mt-6 ">
+        <div className="grid grid-cols-1 mt-6 md:grid-cols-2 md:gap-6">
           {tabsData[activeTabIndex].content.map((item, index) => {
             return (
               <a className="mb-3" href={item.url} key={index} target="_blank">
-                <div className="overflow-hidden h-44 md:h-full border ">
+                <div className="overflow-hidden h-44 border md:h-full">
                   <img
-                    className="object-cover w-full h-full"
+                    className="object-cover w-full h-full brightness-75"
                     src={item.imageURL}
                     alt={item.title}
                   />
 
-                  {/* <div className="absolute bg-black/90 px-5 w-full bottom-0 text-white text-center leading-4"> */}
+                  {/* <div className="absolute bottom-0 px-5 w-full leading-4 text-center text-white bg-black/90"> */}
                   {/*   <p className="mb-2 text-base">{item.title}</p> */}
-                  {/*   <p className="text-sm ">{item.desc}</p> */}
+                  {/*   <p className="text-sm">{item.desc}</p> */}
                   {/* </div> */}
                 </div>
               </a>

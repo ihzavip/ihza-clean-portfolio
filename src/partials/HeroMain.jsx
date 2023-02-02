@@ -1,8 +1,8 @@
-import React, { useLayoutEffect } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { Link } from "react-router-dom";
 // components
-import { DownloadButton } from "./partial-components/DownloadButton";
+import { Button } from "./partial-components/Button";
 import {
   UilGithub,
   UilLinkedin,
@@ -11,20 +11,39 @@ import {
 } from "@iconscout/react-unicons";
 
 const HeroMain = () => {
+  const tl = useRef();
+
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.from(".hero-animation", {
-        opacity: 0,
-        // xPercent: -200,
-        duration: 1.2,
-        stagger: 0.8,
-      });
-      gsap.from(".image-animation", {
-        // xPercent: 200,
-        opacity: 0,
-        duration: 1.2,
-        stagger: 0.8,
-      });
+      tl.current && tl.current.progress(0).kill();
+      tl.current = gsap
+        .timeline()
+        .from(".hero-animation", {
+          // opacity: 0,
+          xPercent: -200,
+          duration: 1.2,
+          stagger: 0.2,
+        })
+        .from(
+          ".image-animation",
+          {
+            xPercent: 200,
+            // opacity: 0,
+            duration: 1.2,
+            stagger: 0.2,
+          },
+          "="
+        )
+        .from(
+          ".social-animation",
+          {
+            xPercent: 200,
+            opacity: 0,
+            duration: 1.2,
+            stagger: 0.5,
+          },
+          "="
+        );
     });
 
     return () => ctx.revert();
@@ -32,33 +51,32 @@ const HeroMain = () => {
 
   return (
     <>
-      <main
+      <div
         id="hero-section"
-        className="pt-12 px-6 md:px-24 md:pt-32 md:pb-24 gap-10 md:gap-28 
-        h-full w-full
-        flex flex-col justify-center items-center md:flex-row md:items-start md:justify-between"
+        className="flex flex-col gap-10 justify-center items-center py-12 px-6 w-full h-full md:flex-row md:justify-between md:items-start md:px-24 md:pt-28"
       >
-        <div className="flex flex-col gap-6 max-w-2xl xl:gap-12">
-          <div>
-            <p className="hero-animation text-lg xl:text-xl">Hello, I'm</p>
-            <h1 className="hero-animation saol text-4xl text-white md:text-5xl xl:text-6xl ">
+        {/* left section hero text */}
+        <div className="flex flex-col gap-6 w-full lg:gap-3">
+          <div className="space-y-1">
+            <p className="text-xs lg:text-sm hero-animation">Hello, I'm</p>
+            <h1 className="text-3xl text-white lg:text-5xl hero-animation font-saol">
               IHZA HASIBUAN
             </h1>
           </div>
 
-          <p className="hero-animation text-base md:text-base lg: xl:text-3xl ">
-            I am a web developer with a background in sales, and I proficient in
+          <p className="text-sm lg:text-lg hero-animation">
+            I am a web developer with a background of sales, and I proficient in
             creating beautifully designed and highly functional websites that
             help businesses achieve their goals. Thank you for visiting!
           </p>
-          <div className="flex justify-center md:justify-start gap-4 md:mt-3 hero-animation">
-            <DownloadButton btnName={"RESUME"} />
+          <div className="flex gap-4 justify-center md:justify-start md:mt-3 hero-animation">
+            <Button btnName={"RESUME"} />
 
             <Link to={"/story"}>
               <button
                 type="button"
                 className="h-10 w-36 px-4 py-2 text-white font-semibold tracking-[3px]
-                border-[#626262] border-[1px]  rounded  bg-transparent  hover:border-[#fff8aa] hover:bg-[#fff8aa14]  hover:text-[#fff8aa] uppercase xl:h-16 xl:w-52 xl:text-2xl
+                border-[#626262] border-[1px]  rounded  bg-transparent  hover:border-[#fff8aa] hover:bg-[#fff8aa14]  hover:text-[#fff8aa] uppercase 
 "
               >
                 <div className="flex justify-center">
@@ -81,42 +99,43 @@ const HeroMain = () => {
           </div>
         </div>
 
-        <div className="image-animation w-full pt-8 md:w-1/2 h-56 md:h-full">
-          <img
-            className="h-full w-full object-cover grayscale-[100%] rounded"
-            src="./images/pp.jpg"
-            alt=""
-          />
-          <ul className="image-animation mt-6 hidden text-white md:flex md:justify-center md:gap-10">
-            <li>
+        {/* right section image */}
+        <div className="flex flex-col gap-4 justify-center items-center w-full">
+          <ul className="flex gap-5 text-white opacity-100 lg:gap-10">
+            <li className="social-animation">
               <a href="https://github.com/ihzavip" target="_blank">
-                <UilGithub size="30" className="hover:text-[#fff8aa]" />
+                <UilGithub size="40" className="hover:text-[#fff8aa]" />
               </a>
             </li>
-            <li className="">
+            <li className="social-animation">
               <a
                 href="https://www.linkedin.com/in/ihza-hasibuan/"
                 target="_blank"
               >
-                <UilLinkedin size="30" className="hover:text-[#fff8aa]" />
+                <UilLinkedin size="40" className="hover:text-[#fff8aa]" />
               </a>
             </li>
-            <li className="">
+            <li className="social-animation">
               <a href="https://wa.me/6282272881896" target="_blank">
-                <UilWhatsapp size="30" className="hover:text-[#fff8aa]" />
+                <UilWhatsapp size="40" className="hover:text-[#fff8aa]" />
               </a>
             </li>
-            <li className="">
+            <li className="social-animation">
               <a
                 href="https://www.frontendmentor.io/profile/ihzavip"
                 target="_blank"
               >
-                <UilMediumM size="30" className="hover:text-[#fff8aa]" />
+                <UilMediumM size="40" className="hover:text-[#fff8aa]" />
               </a>
             </li>
           </ul>
+          <img
+            src="./images/illustation/9232-6457-cropped.svg"
+            className="object-cover h-64 rounded-full lg:h-72 image-animation bg-emerald-100/40"
+            alt=""
+          />
         </div>
-      </main>
+      </div>
 
       {/* divider fix it later */}
       {/* <div className="w-[30%]  h-[2px] text-center bg-[#242323] text-[#161616]"></div> */}

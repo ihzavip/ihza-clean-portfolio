@@ -13,7 +13,7 @@ const datas = [
       "https://images.pexels.com/photos/5797898/pexels-photo-5797898.jpeg?auto=compress&cs=tinysrgb&w=600",
     content: {
       title: "Digital Strategy",
-      desc: "Optimizing Digital Touchpoints for Growth",
+      desc: "Optimizing Digital Touchpoints for brand Growth",
       link: "#link-test",
       key: 1,
     },
@@ -78,12 +78,14 @@ export default function Expertise() {
     <>
       <section
         id="expertise-section"
-        className="pt-24 sm:pl-24 flex flex-col md:flex-row md:justify-start min-h-ful max-w-screen-2xl items-center "
+        className="flex flex-col items-start pt-12 max-w-screen-2xl sm:pt-24 md:flex-row md:justify-start md:items-center"
       >
         <div className="sm:mr-12">
-          <div className="sm:w-96 px-6 md:px-0">
-            <h2 className="text-white saol text-4xl md:text-5xl ">Expertise</h2>
-            <p className="mt-2 mb-6 ">
+          <div className="px-6 sm:w-96 lg:pr-0 lg:pl-24">
+            <h2 className="text-4xl text-white md:text-5xl font-saol">
+              Expertise
+            </h2>
+            <p className="mt-2 mb-6">
               I am dedicated to finding the most advanced digital solutions for
               brands that want to be progressive and make a meaningful impact.
             </p>
@@ -121,24 +123,24 @@ export default function Expertise() {
           loop={true}
           // centeredSlides={true}
           modules={[FreeMode]}
-          className="mySwiper w-full h-full py-8 pl-0 "
+          className="py-8 pl-0 w-full h-full lg:py-0 mySwiper"
         >
           {datas.map((data, index) => {
             return (
-              <SwiperSlide className="w-60 h-full " key={index}>
-                <div className="w-60 h-80">
+              <SwiperSlide className="w-60 h-full" key={index}>
+                <div className="w-60 h-72">
                   <img
-                    className="object-cover w-full h-full object-center grayscale"
+                    className="object-cover object-center w-full h-full grayscale"
                     src={data.source}
                     alt={data.title}
                   />
                 </div>
 
-                <a href={data.content.link} className="block mt-4">
-                  <h3 className="text-white text-base uppercase">
+                <a href={data.content.link} className="block mt-4 border-b">
+                  <h3 className="text-base text-white uppercase">
                     {data.content.title} <sup>{`0${data.content.key}`}</sup>
                   </h3>
-                  <h2 className="py-2">{data.content.desc}</h2>
+                  <h2 className="py-2 text-white/80">{data.content.desc}</h2>
                 </a>
               </SwiperSlide>
             );

@@ -1,5 +1,6 @@
 import React from "react";
-export const DownloadButton = ({ btnName }) => {
+
+export const Button = ({ btnName }) => {
   const onButtonClick = () => {
     // using Java Script method to get PDF file
     fetch("ihza-webdeveloper.pdf").then((response) => {
@@ -19,14 +20,11 @@ export const DownloadButton = ({ btnName }) => {
       <button
         onClick={onButtonClick}
         type="button"
-        className="h-10 w-36 px-4 py-2 text-white bg-transparent tracking-[3px] font-semibold 
-        border-[#626262] border-[1px] rounded 
-        xl:h-16 xl:w-52 xl:text-2xl
-        hover:border-[#fff8aa] hover:bg-[#fff8aa14] hover:text-[#fff8aa]
+        className="h-10 w-36 px-4 py-2 text-white bg-transparent tracking-[3px] font-semibold border-[#626262] border-[1px] rounded hover:border-[#fff8aa] hover:bg-[#fff8aa14] hover:text-[#fff8aa]
         "
       >
         <div className="flex gap-1 justify-center">
-          <p>{btnName}</p>
+          <span>{btnName}</span>
 
           <svg
             xmlns="http://www.w3.org/2000/svg"

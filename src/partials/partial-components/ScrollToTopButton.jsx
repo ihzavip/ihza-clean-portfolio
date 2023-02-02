@@ -27,7 +27,7 @@ const ScrollToTop = () => {
 
   // ${isVisible ? "opacity-100" : "opacity-0"}
   return (
-    <div className="sticky block bottom-2 left-40">
+    <div className="block sticky bottom-2 left-40">
       <HashLink to="/expertisepage/#top" smooth>
         <button
           type="button"
@@ -35,7 +35,7 @@ const ScrollToTop = () => {
    ${visible ? "opacity-100" : "opacity-0"}
           bg-pink-600 hover:bg-pink-700 focus:ring-pink-500 inline-flex items-center rounded-full p-3 text-white shadow-sm transition-opacity focus:outline-none focus:ring-2 focus:ring-offset-2`}
         >
-          <UilAngleUp className="h-12 w-12" aria-hidden="true" />
+          <UilAngleUp className="w-12 h-12" aria-hidden="true" />
         </button>
       </HashLink>
     </div>

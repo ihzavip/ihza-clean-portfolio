@@ -13,17 +13,19 @@ export default function App() {
     <>
       <section
         id="skill"
-        className="relative h-full pt-12 px-6 sm:px-24 sm:py-24 "
+        className="relative px-6 pt-12 h-full md:pt-24 lg:px-24"
       >
-        <h2 className="saol text-white text-center text-4xl mb-10">Skills</h2>
+        <h2 className="mb-10 text-4xl text-center text-white font-saol">
+          Skills
+        </h2>
         <Swiper
           effect={"cards"}
           grabCursor={true}
           modules={[EffectCards]}
-          className="skill-swiper text-white max-w-[60vw] h-[50vh]"
+          className="w-3/4 max-w-2xl h-full text-white skill-swiper"
         >
           <SwiperSlide className="skills flex flex-col py-6 items-center bg-[#0c0c0c] rounded border border-white/50">
-            <h4 className="text-xl ">Basic Stack</h4>
+            <h4 className="text-xl">Basic Stack</h4>
             <ul className="flex flex-col items-center mt-5">
               <li>HTML</li>
               <li>CSS</li>
@@ -37,7 +39,7 @@ export default function App() {
             </ul>
           </SwiperSlide>
           <SwiperSlide className="skills flex flex-col py-6 items-center bg-[#0c0c0c] rounded border border-white/50">
-            <h4 className="text-xl ">Framework & Lib</h4>
+            <h4 className="text-xl">Framework & Lib</h4>
             <ul className="flex flex-col items-center mt-5">
               <li>React</li>
               <li>Next</li>
@@ -51,13 +53,13 @@ export default function App() {
             </ul>
           </SwiperSlide>
           <SwiperSlide className="skills flex flex-col py-6 items-center bg-[#0c0c0c] rounded border border-white/50">
-            <h4 className="text-xl ">Database</h4>
+            <h4 className="text-xl">Database</h4>
             <ul className="flex flex-col items-center mt-5">
               <li>MongoDB</li>
               <li>MySQL</li>
               <li>Firebase</li>
             </ul>
-            <h4 className="text-xl mt-6">CMS</h4>
+            <h4 className="mt-6 text-xl">CMS</h4>
             <ul className="flex flex-col items-center mt-5">
               <li>Sanity</li>
               <li>Kirby</li>
@@ -65,7 +67,7 @@ export default function App() {
             </ul>
           </SwiperSlide>
           <SwiperSlide className="skills flex flex-col py-6 px-8 items-center bg-[#0c0c0c] rounded border border-white/50">
-            <h4 className="text-xl ">Expossed</h4>
+            <h4 className="text-xl">Expossed</h4>
             <ul className="flex flex-col items-center mt-5">
               <li>Angular</li>
               <li>Vue</li>

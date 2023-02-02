@@ -9,7 +9,7 @@ import Skills from "../partials/Skills";
 const Home = () => {
   return (
     <>
-      <main className="mx-auto">
+      <main className="mx-auto max-w-screen-2xl">
         <Navbar />
         <HeroMain />
         <Experience />
