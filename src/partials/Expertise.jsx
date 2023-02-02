@@ -136,11 +136,13 @@ export default function Expertise() {
                   />
                 </div>
 
-                <a href={data.content.link} className="block mt-4 border-b">
-                  <h3 className="text-base text-white uppercase">
+                <a href={data.content.link} className="block mt-4">
+                  <h3 className="text-sm text-white uppercase">
                     {data.content.title} <sup>{`0${data.content.key}`}</sup>
                   </h3>
-                  <h2 className="py-2 text-white/80">{data.content.desc}</h2>
+                  <h2 className="py-2 text-xs text-white/80">
+                    {data.content.desc}
+                  </h2>
                 </a>
               </SwiperSlide>
             );
