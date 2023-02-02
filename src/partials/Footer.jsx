@@ -17,16 +17,10 @@ const Footer = () => {
       id="footer-section"
       className="px-6 pt-12 max-h-screen sm:mx-auto lg:px-24 lg:pt-12"
     >
-      <div className="flex flex-col gap-4 mx-auto">
-        <h3 className="text-6xl text-white sm:text-8xl font-saol">
-          Let's Talk.{" "}
-        </h3>
-        <div>
-          <p>current time in my country, </p>
-          <span className="text-xl text-white font-saol">{time}</span>
-        </div>
-        <div className="w-full h-[1px] opacity-50 bg-[#adadad]"></div>
-      </div>
+      <h3 className="text-6xl text-white sm:text-8xl font-saol">
+        Let's Talk.{" "}
+      </h3>
+      <div className="w-full h-[1px] opacity-50 bg-[#adadad]"></div>
 
       <div className="mt-10">
         <div className="flex flex-col gap-6 md:justify-between">
@@ -38,8 +32,12 @@ const Footer = () => {
           </div>
           <div className="">
             <h3 className="text-xs uppercase lg:text-xl">contact</h3>
-            <p className="mt-2 text-sm text-white lg:text-lg">hasibuanihza@gmail.com</p>
-            <p className="mt-2 text-sm text-white lg:text-lg">+62 82272881896</p>
+            <p className="mt-2 text-sm text-white lg:text-lg">
+              hasibuanihza@gmail.com
+            </p>
+            <p className="mt-2 text-sm text-white lg:text-lg">
+              +62 82272881896
+            </p>
           </div>
           <div>
             <h3 className="text-xs md:text-xl">SOCIALS</h3>
