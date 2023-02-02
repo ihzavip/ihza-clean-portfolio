@@ -56,10 +56,10 @@ const HeroMain = () => {
         className="flex flex-col gap-10 justify-center items-center py-12 px-6 w-full h-full md:flex-row md:justify-between md:items-start md:px-24 md:pt-28"
       >
         {/* left section hero text */}
-        <div className="flex flex-col gap-6 w-full lg:gap-3">
+        <div className="space-y-4 lg:space-y-10 w-full h-full lg:gap-3">
           <div className="space-y-1">
             <p className="text-xs lg:text-sm hero-animation">Hello, I'm</p>
-            <h1 className="text-3xl text-white lg:text-5xl hero-animation font-saol">
+            <h1 className="text-3xl sm:text-4xl text-white lg:text-5xl hero-animation font-saol">
               IHZA HASIBUAN
             </h1>
           </div>
@@ -69,7 +69,7 @@ const HeroMain = () => {
             creating beautifully designed and highly functional websites that
             help businesses achieve their goals. Thank you for visiting!
           </p>
-          <div className="flex gap-4 justify-center md:justify-start md:mt-3 hero-animation">
+          <div className="flex gap-4 justify-start md:mt-3 hero-animation">
             <Button btnName={"RESUME"} />
 
             <Link to={"/story"}>

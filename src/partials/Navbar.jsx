@@ -260,7 +260,7 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <div className="flex absolute bottom-8 left-1/2 gap-8 justify-center opacity-100 -translate-x-1/2">
+            <div className="flex absolute bottom-24 md:bottom-7 left-1/2 gap-8 justify-center opacity-100 -translate-x-1/2">
               <a href="https://github.com/ihzavip" target="_blank">
                 <UilGithub size="40" className="social-media-animation" />
               </a>
