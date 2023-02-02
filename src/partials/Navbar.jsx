@@ -100,9 +100,9 @@ const Navbar = () => {
         `}
     >
       {/* for desktop */}
-      <nav className="hidden md:flex justify-between items-center border-b-[1px] px-16 py-4 ">
-        <ul className="flex gap-10 font-semibold uppercase tracking-[6px] text-white">
-          <li className="cursor-pointer ">
+      <nav className="hidden justify-between items-center py-4 px-16 text-xs lg:flex lg:text-sm border-b-[1px]">
+        <ul className="flex gap-10 font-semibold text-white uppercase tracking-[6px]">
+          <li className="cursor-pointer">
             <HashLink
               className="link link-underline link-underline-black"
               smooth
@@ -111,7 +111,7 @@ const Navbar = () => {
               Experience
             </HashLink>
           </li>
-          <li className="cursor-pointer ">
+          <li className="cursor-pointer">
             <HashLink
               className="link link-underline link-underline-black"
               smooth
@@ -131,7 +131,7 @@ const Navbar = () => {
             </HashLink>
           </li>
 
-          <li className="cursor-pointer ">
+          <li className="cursor-pointer">
             <HashLink
               className="link link-underline link-underline-black"
               smooth
@@ -141,7 +141,7 @@ const Navbar = () => {
             </HashLink>
           </li>
 
-          <li className="cursor-pointer ">
+          <li className="cursor-pointer">
             <HashLink
               className="link link-underline link-underline-black"
               smooth
@@ -154,15 +154,15 @@ const Navbar = () => {
         <div>
           <button
             type="button"
-            className="animateButton border-[#626262] border-[1px] rounded-[8rem] px-4 py-2 text-xs tracking-[3px] bg-transparent font-semibold hover:border-[#fff8aa] hover:bg-[#fff8aa14] hover:text-[#fff8aa] "
+            className="animateButton px-4 py-2 tracking-[3px] bg-transparent font-semibold border-[#626262] border-[1px] rounded-[8rem] hover:border-[#fff8aa] hover:bg-[#fff8aa14] hover:text-[#fff8aa] "
           >
             HIRE ME
-          </button>{" "}
+          </button>
         </div>
       </nav>
 
       {/* for mobile */}
-      <nav className="border-b-white border-b-[1px] flex justify-between items-center px-8 py-4 md:hidden">
+      <nav className="flex justify-between items-center py-4 px-8 lg:hidden border-b-white border-b-[1px]">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -170,7 +170,7 @@ const Navbar = () => {
           onClick={() => {
             setReversed(!reversed);
           }}
-          className="w-8 h-8 cursor-pointer z-20"
+          className="z-20 w-8 h-8 cursor-pointer"
         >
           <path
             fillRule="evenodd"
@@ -185,7 +185,7 @@ const Navbar = () => {
 
         <button
           type="button"
-          className="border-[#626262] border-[1px] rounded-[8rem] px-4 py-2 text-xs tracking-[3px] bg-transparent font-semibold hover:border-[#fff8aa] hover:bg-[#fff8aa14] hover:text-[#fff8aa]"
+          className="border-[#626262] border-[1px] rounded-[8rem] px-4 py-2 tracking-[3px] bg-transparent font-semibold text-xs hover:border-[#fff8aa] hover:bg-[#fff8aa14] hover:text-[#fff8aa]"
         >
           <a href="mailto:hasibuanihza@gmail.com">HIRE ME</a>
         </button>
@@ -193,9 +193,9 @@ const Navbar = () => {
 
       {/* the parent ofc */}
       <section className="fullpage-menu bg-gradient absolute block -translate-x-[800%] inset-0 w-screen h-screen z-10 ">
-        <div className="flex items-start text-center h-full pt-24">
-          <nav className="relative z-10">
-            <ul className="main-menu saol uppercase text-white/90 text-3xl w-screen flex flex-col gap-8">
+        <div className="flex relative items-start pt-24 h-full text-center">
+          <nav className="z-10">
+            <ul className="px-10 space-y-2 w-screen text-4xl text-left uppercase sm:text-7xl main-menu font-saol text-white/90">
               <li>
                 <HashLink
                   className="link link-underline link-underline-black"
@@ -210,7 +210,7 @@ const Navbar = () => {
               </li>
               <li>
                 <HashLink
-                  className="link link-underline link-underline-black uppercase"
+                  className="uppercase link link-underline link-underline-black"
                   smooth
                   to="/#project-section"
                   onClick={() => {
@@ -223,7 +223,7 @@ const Navbar = () => {
 
               <li className="cursor-pointer">
                 <HashLink
-                  className="link link-underline link-underline-black uppercase"
+                  className="uppercase link link-underline link-underline-black"
                   smooth
                   to="/#skill"
                   onClick={() => {
@@ -236,7 +236,7 @@ const Navbar = () => {
 
               <li>
                 <HashLink
-                  className="link link-underline link-underline-black uppercase"
+                  className="uppercase link link-underline link-underline-black"
                   smooth
                   to="/#expertise-section"
                   onClick={() => {
@@ -248,7 +248,7 @@ const Navbar = () => {
               </li>
               <li>
                 <HashLink
-                  className="link link-underline link-underline-black uppercase"
+                  className="uppercase link link-underline link-underline-black"
                   smooth
                   to="/#faq-section"
                   onClick={() => {
@@ -258,10 +258,9 @@ const Navbar = () => {
                   faq
                 </HashLink>
               </li>
-              <li></li>
             </ul>
 
-            <div className=" mt-28 opacity-100 flex gap-8 justify-center">
+            <div className="flex absolute bottom-8 left-1/2 gap-8 justify-center opacity-100 -translate-x-1/2">
               <a href="https://github.com/ihzavip" target="_blank">
                 <UilGithub size="40" className="social-media-animation" />
               </a>

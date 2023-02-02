@@ -4,13 +4,13 @@ import { HashLink } from "react-router-hash-link";
 const ExpertisePage = () => {
   return (
     <>
-      <section id="top" className="min-h-screen relative px-6 md:px-80 ">
+      <section id="top" className="relative px-6 md:px-52">
         <HashLink to={"/#expertise-section"}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 20 20"
             fill="currentColor"
-            className="w-10 h-10 absolute left-6 md:left-16 top-6"
+            className="absolute top-6 left-6 w-10 h-10 md:left-16"
           >
             <path
               fillRule="evenodd"
@@ -20,7 +20,7 @@ const ExpertisePage = () => {
           </svg>
         </HashLink>
         <div className="pt-32 max-w">
-          <h2 className="saol text-3xl text-white uppercase">
+          <h2 className="text-3xl text-white uppercase font-saol">
             skillset & tools
           </h2>
 
@@ -154,7 +154,7 @@ const ExpertisePage = () => {
           </div>
 
           <div className="h-[1px] opacity-50 bg-[#adadad]"></div>
-          <div id="tools" className="my-14 pb-14">
+          <div id="tools" className="pb-14 my-14">
             <h2 className="mb-7">7. Tools that i used</h2>
 
             <h3>Development </h3>

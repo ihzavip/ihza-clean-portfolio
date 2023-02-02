@@ -12,6 +12,9 @@ module.exports = {
       animation: {
         fadeIn: "fadeIn 0.4s ease-in-out forwards",
       },
+      fontFamily: {
+        saol: ["saol", "cursive"],
+      },
     },
   },
   plugins: [],

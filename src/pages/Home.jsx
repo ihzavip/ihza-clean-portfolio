@@ -9,14 +9,16 @@ import Skills from "../partials/Skills";
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <HeroMain />
-      <Experience />
-      <ProjectTab />
-      <Skills />
-      <Expertise />
-      <FaqSection />
-      <Footer />
+      <main className="mx-auto max-w-screen-2xl">
+        <Navbar />
+        <HeroMain />
+        <Experience />
+        <ProjectTab />
+        <Skills />
+        <Expertise />
+        <FaqSection />
+        <Footer />
+      </main>
     </>
   );
 };
