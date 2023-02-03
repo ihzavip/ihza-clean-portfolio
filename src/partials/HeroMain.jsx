@@ -53,7 +53,7 @@ const HeroMain = () => {
     <>
       <div
         id="hero-section"
-        className="flex flex-col gap-10 justify-center items-center py-12 px-6 w-full h-full md:flex-row md:justify-between md:items-start md:px-24 md:pt-28"
+        className="flex flex-col gap-10 justify-center items-center py-12 px-6 w-full h-full md:flex-row md:justify-between md:items-start md:px-12 lg:px-24 md:pt-12 lg:pt-24"
       >
         {/* left section hero text */}
         <div className="space-y-4 w-full h-full lg:gap-3 lg:space-y-10">
