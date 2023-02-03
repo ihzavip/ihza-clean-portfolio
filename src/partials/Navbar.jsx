@@ -16,19 +16,6 @@ const Navbar = () => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
-  // scroll navbar
-  // const handleScroll = () => {
-  //   const currentScrollPos = window.scrollY;
-
-  //   if (currentScrollPos > prevScrollPos) {
-  //     setVisible(false);
-  //   } else {
-  //     setVisible(true);
-  //   }
-
-  //   setPrevScrollPos(currentScrollPos);
-  // };
-
   const handleScroll = () => {
     const currentScrollPos = window.scrollY;
 
@@ -43,8 +30,15 @@ const Navbar = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
+  });
+
+  const handleKeydown = (e) => {
+    if (!reversed && e.key === "Escape") setReversed(!reversed);
+  };
+  useEffect(() => {
+    window.addEventListener("keydown", handleKeydown);
+    return () => window.removeEventListener("keydown", handleKeydown);
   });
 
   useLayoutEffect(() => {
@@ -192,7 +186,12 @@ const Navbar = () => {
       </nav>
 
       {/* the parent ofc */}
-      <section className="fullpage-menu bg-gradient absolute block -translate-x-[800%] inset-0 w-screen h-screen z-10 ">
+      <section
+        onKeyDown={(e) => {
+          console.log("user press", e.key);
+        }}
+        className="fullpage-menu overflow-y-scroll bg-gradient absolute block -translate-x-[800%] inset-0 w-screen h-screen z-10 "
+      >
         <div className="flex relative items-start pt-24 h-full text-center">
           <nav className="z-10">
             <ul className="px-10 space-y-2 w-screen text-4xl text-left uppercase sm:text-7xl main-menu font-saol text-white/90">
@@ -260,7 +259,7 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <div className="flex absolute bottom-24 md:bottom-7 left-1/2 gap-8 justify-center opacity-100 -translate-x-1/2">
+            <div className="flex absolute bottom-24 left-1/2 gap-8 justify-center py-6 opacity-100 -translate-x-1/2 sm:static sm:left-0 sm:text-center sm:translate-x-0 md:bottom-7">
               <a href="https://github.com/ihzavip" target="_blank">
                 <UilGithub size="40" className="social-media-animation" />
               </a>

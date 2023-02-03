@@ -79,7 +79,7 @@ const FaqSection = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col md:mb-8 lg:ml-24 lg:mt-4">
+        <div className="flex flex-col md:mb-8 lg:mt-4 lg:ml-24">
           <h2 className="text-5xl text-white font-saol">FAQ</h2>
           <p className="mt-4">
             Here are the most common questions I hear from my clients.
