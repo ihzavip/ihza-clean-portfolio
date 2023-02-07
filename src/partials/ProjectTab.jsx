@@ -1,53 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { UilMediumM, UilUser, UilBag } from "@iconscout/react-unicons";
-const tabsData = [
-  {
-    label: <UilMediumM />,
-    content: [
-      {
-        title: "Blogr Landing Page",
-        url: "https://ihzahsb-blogr.netlify.app/",
-        imageURL: "./images/blogr-ss.png",
-        desc: "Blogr landing page from FrontEnd Mentor challenge",
-      },
+import { tabsData } from "../utils/utils";
 
-      {
-        title: "Sunnyside Agency Landing Page",
-        url: "https://ihzahsb-sunnyside.netlify.app",
-        imageURL: "./images/sunnyside-ss.png",
-        desc: "Sunnyside Agency landing page ",
-      },
-      {
-        title: "Ecommerce Product Page",
-        url: "https://ihzahsb-ecommerce-product.netlify.app",
-        imageURL: "./images/ecommerce-ss.png",
-        desc: "Ecommerce product & checkout feature",
-      },
-    ],
-  },
-  {
-    label: <UilUser />,
-    content: [
-      {
-        title: "Personal Blog",
-        url: "https://hasibuan-ihza.netlify.app",
-        imageURL: "./images/coming-soon-2.png",
-        desc: "My personal blog for my daily code and learning journey",
-      },
-    ],
-  },
-  {
-    label: <UilBag />,
-    content: [
-      {
-        title: "PT. Sinar Laut Biru Landing Page",
-        url: "#",
-        imageURL: "./images/sinarlautbiruind.png",
-        desc: "PT. Sinar Laut Biru",
-      },
-    ],
-  },
-];
 export default function Tabs() {
   const [activeTabIndex, setActiveTabIndex] = useState(0);
   const [tabUnderlineWidth, setTabUnderlineWidth] = useState(0);

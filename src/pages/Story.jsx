@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 const Story = () => {
   return (
-    <section className="relative px-12 lg:px-52">
+    <section className="relative px-6 lg:px-52">
       <Link to={"/"}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@ const Story = () => {
       </Link>
       <div className="pt-32">
         <h2 className="text-3xl text-white saol">ABOUT ME</h2>
-        <div className="py-6 text-lg break-word">
+        <div className="py-6 text-sm md:text-base lg:text-lg">
           <p className="mt-6">
             Hey there, my name is Muhammad Ihza Mahendra and I'm a web developer
             with a background of sales. I love creating websites that are not

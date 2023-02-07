@@ -1,78 +1,14 @@
 import "swiper/css/bundle";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
+import { Button } from "../partials/partial-components/Button";
+import { expertiseData } from "../utils/utils";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { FreeMode } from "swiper";
 
-const datas = [
-  {
-    source:
-      "https://images.pexels.com/photos/5797898/pexels-photo-5797898.jpeg?auto=compress&cs=tinysrgb&w=600",
-    content: {
-      title: "Digital Strategy",
-      desc: "Optimizing Digital Touchpoints for brand Growth",
-      link: "#link-test",
-      key: 1,
-    },
-  },
-  {
-    source:
-      "https://images.unsplash.com/photo-1634449278211-eca7f696940e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzF8fGJyYW5kaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-    content: {
-      title: "Branding",
-      desc: "Creating Unique and Recognizable Brands",
-      key: 2,
-    },
-  },
-  {
-    source:
-      "https://images.unsplash.com/photo-1575024357670-2b5164f470c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGxhcHRvcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    content: {
-      title: "Web Development",
-      desc: "Building Strong Online Presence for Business",
-      key: 3,
-    },
-  },
-  {
-    source:
-      "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTJ8fHVzZXIlMjBpbnRlcmZhY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    content: {
-      title: "User Interface",
-      desc: "Enhancing User Experience for Business Growth",
-      key: 4,
-    },
-  },
-  {
-    source:
-      "https://images.unsplash.com/reserve/LJIZlzHgQ7WPSh5KVTCB_Typewriter.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJyYW5kaW5nJTIwc3RyYXRlZ3l8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-    content: {
-      title: "Digital Marketing",
-      desc: "Elevating Brand Visibility",
-      key: 5,
-    },
-  },
-  {
-    source:
-      "https://images.unsplash.com/photo-1585159650922-4f7e634cefbc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHRlbGVwaG9uZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-    content: {
-      title: "Sales",
-      desc: "Generating Revenue Through Exceptional Sales Strategy",
-      key: 6,
-    },
-  },
-  {
-    source:
-      "https://images.pexels.com/photos/210881/pexels-photo-210881.jpeg?auto=compress&cs=tinysrgb&w=600",
-    content: {
-      title: "Tools that I used",
-      desc: "Utilizing tools to enhance the growth of your business",
-      key: 7,
-    },
-  },
-];
 export default function Expertise() {
   return (
     <>
@@ -90,10 +26,7 @@ export default function Expertise() {
               brands that want to be progressive and make a meaningful impact.
             </p>
             <HashLink to={"/expertisepage/#top"}>
-              <button
-                type="button"
-                className="border-[#626262] border-[1px] h-10 w-36 px-4 py-2 rounded tracking-[3px] bg-transparent font-semibold hover:border-[#fff8aa] hover:bg-[#fff8aa14] text-white hover:text-[#fff8aa] uppercase"
-              >
+              <Button>
                 <div className="flex justify-center">
                   <p>more</p>
                   <svg
@@ -109,7 +42,7 @@ export default function Expertise() {
                     />
                   </svg>
                 </div>
-              </button>
+              </Button>
             </HashLink>
           </div>
         </div>
@@ -125,7 +58,7 @@ export default function Expertise() {
           modules={[FreeMode]}
           className="py-8 pl-0 w-full h-full lg:py-0 mySwiper"
         >
-          {datas.map((data, index) => {
+          {expertiseData.map((data, index) => {
             return (
               <SwiperSlide className="w-60 h-full" key={index}>
                 <div className="w-60 h-72">

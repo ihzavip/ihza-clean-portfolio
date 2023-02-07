@@ -25,10 +25,9 @@ const ScrollToTop = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   });
 
-  // ${isVisible ? "opacity-100" : "opacity-0"}
   return (
-    <div className="block sticky bottom-2 left-40">
-      <HashLink to="/expertisepage/#top" smooth>
+    <div className="absolute bottom-2 right-2 ">
+      <HashLink to="/#top" smooth>
         <button
           type="button"
           className={`
