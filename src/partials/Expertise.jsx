@@ -16,7 +16,7 @@ export default function Expertise() {
         id="expertise-section"
         className="flex flex-col items-start pt-12 max-w-screen-2xl sm:pt-24 md:flex-row md:justify-start md:items-center"
       >
-        <div className="sm:mr-12">
+        <div className="sm:mr-12 ">
           <div className="px-6 sm:w-96 lg:pr-0 lg:pl-24">
             <h2 className="text-4xl text-white md:text-5xl font-saol">
               Expertise

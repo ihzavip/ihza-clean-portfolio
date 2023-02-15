@@ -37,12 +37,6 @@ const faq = [
   },
 ];
 
-/*
-
-
-
-*/
-
 const FaqSection = () => {
   return (
     <section id="faq-section" className="px-6 pt-12 lg:px-24 lg:pt-24">
@@ -50,12 +44,12 @@ const FaqSection = () => {
         {/* its the header */}
 
         {/* its the faq */}
-        <div className="grid mt-8 divide-y md:mt-0 divide-neutral-200">
+        <div className="grid mt-8 divide-y md:mt-0 divide-neutral-500">
           {faq.map((detail, index) => (
             <div className="py-5" key={index}>
               <details className="group">
                 <summary className="flex justify-between items-center font-medium list-none cursor-pointer">
-                  <span>{detail.question}</span>
+                  <span className="text-white text-lg">{detail.question}</span>
                   <span className="transition group-open:rotate-180">
                     <svg
                       fill="none"
@@ -79,7 +73,7 @@ const FaqSection = () => {
             </div>
           ))}
         </div>
-        <div className="flex flex-col md:mb-8 lg:mt-4 lg:ml-24">
+        <div className="flex flex-col sm:w-96 md:mb-8 lg:mt-4 sm:ml-12">
           <h2 className="text-5xl text-white font-saol">FAQ</h2>
           <p className="mt-4">
             Here are the most common questions I hear from my clients.

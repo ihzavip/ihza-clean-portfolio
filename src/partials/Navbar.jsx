@@ -102,7 +102,7 @@ const Navbar = () => {
               smooth
               to="/#experience-section"
             >
-              Experience
+              Experiences
             </HashLink>
           </li>
           <li className="cursor-pointer">
@@ -111,7 +111,7 @@ const Navbar = () => {
               smooth
               to="/#project-section"
             >
-              project
+              projects
             </HashLink>
           </li>
 
@@ -131,7 +131,7 @@ const Navbar = () => {
               smooth
               to="/#expertise-section"
             >
-              expertise
+              expertises
             </HashLink>
           </li>
 
@@ -204,7 +204,7 @@ const Navbar = () => {
                     setReversed(!reversed);
                   }}
                 >
-                  Experience
+                  Experiences
                 </HashLink>
               </li>
               <li>
@@ -216,7 +216,7 @@ const Navbar = () => {
                     setReversed(!reversed);
                   }}
                 >
-                  Project
+                  Projects
                 </HashLink>
               </li>
 
@@ -242,7 +242,7 @@ const Navbar = () => {
                     setReversed(!reversed);
                   }}
                 >
-                  expertise
+                  expertises
                 </HashLink>
               </li>
               <li>
@@ -259,7 +259,7 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <div className="flex absolute bottom-24 left-1/2 gap-8 justify-center py-6 opacity-100 -translate-x-1/2 sm:static sm:left-0 sm:text-center sm:translate-x-0 md:bottom-7">
+            <div className="flex absolute bottom-12 left-1/2 gap-8 justify-center py-6 opacity-100 -translate-x-1/2 sm:static sm:left-0 sm:text-center sm:translate-x-0 md:bottom-7">
               <a href="https://github.com/ihzavip" target="_blank">
                 <UilGithub size="40" className="social-media-animation" />
               </a>
