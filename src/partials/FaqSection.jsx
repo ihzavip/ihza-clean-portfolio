@@ -66,7 +66,7 @@ const FaqSection = () => {
                     </svg>
                   </span>
                 </summary>
-                <p className="mt-3 max-w-2xl text-white text-md group-open:animate-fadeIn">
+                <p className="mt-3 max-w-2xl text-md group-open:animate-fadeIn">
                   {detail.answer}
                 </p>
               </details>

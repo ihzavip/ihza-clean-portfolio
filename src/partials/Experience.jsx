@@ -24,7 +24,7 @@ const Experience = () => {
       <div className="timeline-container" id="timeline-1">
         <div className="relative mb-28 w-full text-center">
           <h3 className="px-6 text-4xl text-white lg:text-5xl font-saol">
-            Experience
+            Experiences
           </h3>
         </div>
         <div className="timeline">
@@ -96,24 +96,21 @@ const Experience = () => {
               </p>
             </div>
           </div>
+
           <div className="timeline-item" data-text="Web Developer">
             <div className="timeline__content">
-              {/* <h2 className="py-3 text-white opacity-80 sm:text-xl"> */}
-              {/*   PT. Sinar Laut Biru */}
-              {/* </h2> */}
               <img
-                className="timeline__img"
-                src="./images/illustation/laptop-01-602b.svg"
+                className="timeline__img max-w-48"
+                src="./images/PT-SSSS.png"
                 alt="PT. Sinar Laut Biru"
               />
-              <h2 className="timeline__content-title">1 Jan 2019 - Now</h2>
+              <h2 className="timeline__content-title">13 Mar 2023 - Now</h2>
               <p className="timeline__content-desc">
-                I've been learning while at work to designs, creates, and
-                maintains websites to improve user experience and meet business
-                goals.
+                Work with Angular and REST API to build Web App for internal business needs.
               </p>
             </div>
           </div>
+
         </div>
       </div>
     </section>
