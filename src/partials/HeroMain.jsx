@@ -9,6 +9,7 @@ import {
   UilLinkedin,
   UilWhatsapp,
   UilMediumM,
+  UilBookReader
 } from "@iconscout/react-unicons";
 
 const HeroMain = () => {
@@ -136,6 +137,14 @@ const HeroMain = () => {
                 target="_blank"
               >
                 <UilMediumM size="40" className="hover:text-[#fff8aa]" />
+              </a>
+            </li>
+            <li className="social-animation">
+              <a
+                href="https://www.goodreads.com/user/show/46352746-ihza-hasibuan"
+                target="_blank"
+              >
+                <UilBookReader size="40" className="hover:text-[#fff8aa]" />
               </a>
             </li>
           </ul>

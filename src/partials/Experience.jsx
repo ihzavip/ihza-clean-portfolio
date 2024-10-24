@@ -33,15 +33,15 @@ const Experience = () => {
               {/* <h2 className="py-3 text-white opacity-80 sm:text-xl"> */}
               {/*   PT. Bentoel Group */}
               {/* </h2> */}
-              <a href="https://www.bentoelgroup.com/" target="_blank">
+              <a href="https://www.bentoelgroup.com/id/index.html" target="_blank">
                 <img
                   className="timeline__img"
-                  src="https://www.tobakonis.com/wp-content/uploads/2019/07/000009-00_produk-rokok-bentoel_bentoel-group_800x450_ccpdm-min.jpg"
+                  src="https://www.bentoelgroup.com/id/imgs/logo_BAT_A5EEYP.png"
                   alt="PT. Bentoel Group"
                 />
               </a>
               <h2 className="timeline__content-title">
-                1 Jan 2016 - 30 Jun 2016
+                January 2016 - June 2016
               </h2>
               <p className="timeline__content-desc">
                 Plan and develop merchandising strategies that balance customers
@@ -63,7 +63,7 @@ const Experience = () => {
                 />
               </a>
               <h2 className="timeline__content-title">
-                1 Jun 2019 - 30 Feb 2021
+                June 2019 - February 2021
               </h2>
               <p className="timeline__content-desc">
                 Ensure all merchants complete the on-boarding cycle and start
@@ -86,7 +86,7 @@ const Experience = () => {
                 />
               </a>
               <h2 className="timeline__content-title">
-                1 Sept 2021 - 1 Mar 2022
+                September 2021 - March 2022
               </h2>
               <p className="timeline__content-desc">
                 Responsible for initiating contact with potential and current
@@ -104,9 +104,9 @@ const Experience = () => {
                 src="./images/PT-SSSS.png"
                 alt="PT. Sinar Laut Biru"
               />
-              <h2 className="timeline__content-title">13 Mar 2023 - Now</h2>
+              <h2 className="timeline__content-title">March 2023 - Present</h2>
               <p className="timeline__content-desc">
-                Work with Angular and REST API to build Web App for internal business needs.
+                Worked with Angular and REST API to build internal web applications for logistics, payroll, HRIS, and legal, streamlining operations and improving efficiency across business processes.
               </p>
             </div>
           </div>
