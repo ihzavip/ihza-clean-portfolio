@@ -30,12 +30,11 @@ export default function App() {
               <li>HTML</li>
               <li>CSS</li>
               <li>Javascript</li>
-              <li>PHP</li>
-              <li>API</li>
-              <li>Bash Terminal</li>
+              <li>Typescript</li>
+              <li>Python</li>
+              <li>Scripting</li>
+              <li>Bash</li>
               <li>GIT</li>
-              <li>Linux</li>
-              <li>VIM</li>
             </ul>
           </SwiperSlide>
           <SwiperSlide className="skills flex flex-col py-6 items-center bg-[#0c0c0c] rounded border border-white/50">
@@ -43,12 +42,11 @@ export default function App() {
             <ul className="flex flex-col items-center mt-5">
               <li>Angular</li>
               <li>React</li>
-              <li>Next</li>
-              <li>Node JS</li>
+              <li>Node</li>
               <li>jQuery</li>
-              <li>GSAP</li>
               <li>Tailwind</li>
               <li>Bootstrap</li>
+              <li>GSAP</li>
               <li>Material UI</li>
             </ul>
           </SwiperSlide>
@@ -69,8 +67,9 @@ export default function App() {
           <SwiperSlide className="skills flex flex-col py-6 px-8 items-center bg-[#0c0c0c] rounded border border-white/50">
             <h4 className="text-xl">Expossed</h4>
             <ul className="flex flex-col items-center mt-5">
-              <li>ASP.NET</li>
               <li>Vue</li>
+              <li>ASP.NET</li>
+              <li>GoLang</li>
             </ul>
           </SwiperSlide>
         </Swiper>

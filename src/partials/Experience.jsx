@@ -33,10 +33,10 @@ const Experience = () => {
               {/* <h2 className="py-3 text-white opacity-80 sm:text-xl"> */}
               {/*   PT. Bentoel Group */}
               {/* </h2> */}
-              <a href="https://www.bentoelgroup.com/id/index.html" target="_blank">
+              <a href="https://www.bentoelgroup.com/id" target="_blank">
                 <img
                   className="timeline__img"
-                  src="https://www.bentoelgroup.com/id/imgs/logo_BAT_A5EEYP.png"
+                  src="./images/bentoel.png"
                   alt="PT. Bentoel Group"
                 />
               </a>
