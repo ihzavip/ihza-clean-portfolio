@@ -68,7 +68,7 @@ const HeroMain = () => {
 
           <p className="text-sm lg:text-lg hero-animation">
             I am a web developer with a background of sales, and I proficient in
-            creating beautifully designed and highly functional websites that
+            creating beautifully designed and higly functional websites that
             help businesses achieve their goals. Thank you for visiting!
           </p>
           <div className="flex gap-4 justify-start md:mt-3 hero-animation">

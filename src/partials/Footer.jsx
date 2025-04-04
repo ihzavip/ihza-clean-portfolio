@@ -89,7 +89,7 @@ const Footer = () => {
         <div className="flex justify-between items-center">
           <div className="flex flex-col gap-5 my-4 justify-between-center">
             <h3 className="text-xs uppercase">version</h3>
-            <p className="text-lg text-white">2023 Edition</p>
+            <p className="text-lg text-white">{new Date().getFullYear()} Edition</p>
           </div>
           <div className="flex flex-col gap-5 my-4 justify-between-center">
             <h3 className="text-xs uppercase">local time</h3>
